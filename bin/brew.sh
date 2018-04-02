@@ -16,6 +16,7 @@ brew install git-quick-stats
 brew install git-standup
 brew install go
 brew install go-delve/delve/delve
+brew install heroku
 brew install hugo
 brew install imagemagick --with-webp
 brew install lua
@@ -48,7 +49,19 @@ brew upgrade watchman
 brew upgrade woff2
 brew upgrade zsh zsh-completions
 
+brew unlink git
 brew link git
-brew link python3
 
-brew unlink php56 && brew install php71-xdebug
+brew uninstall python2
+brew unlink python2
+brew unlink python3
+rm '/usr/local/bin/2to3'
+brew install python3
+brew link --overwrite python
+
+brew uninstall node
+brew unlink node
+brew install node
+
+brew unlink php56
+brew install php71-xdebug

@@ -30,7 +30,6 @@ brew cask install teamviewer
 brew cask install virtualbox
 brew cask install zoomus
 # Cloud cli
-pip install awscli --upgrade --user
 # brew install azure-cli
 # curl https://sdk.cloud.google.com | bash
 # sudo pip install aliyuncli
